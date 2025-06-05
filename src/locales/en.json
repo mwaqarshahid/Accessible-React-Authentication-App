@@ -1,0 +1,40 @@
+{
+  "common": {
+    "email": "Email",
+    "password": "Password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "emailDescription": "Enter the email address associated with your account",
+    "emailPrivacy": "We'll never share your email with anyone else",
+    "passwordRequirements": "Must be at least 8 characters long",
+    "required": "Required"
+  },
+  "login": {
+    "title": "Sign in to your account",
+    "submitButton": "Sign in",
+    "forgotPassword": "Forgot your password?",
+    "noAccount": "Don't have an account?",
+    "signupLink": "Sign up",
+    "error": {
+      "emptyFields": "Please fill in all fields",
+      "failed": "Login failed. Please try again."
+    }
+  },
+  "signup": {
+    "title": "Create your account",
+    "fullName": "Full name",
+    "fullNameDescription": "Enter your full name as it appears on official documents",
+    "submitButton": "Create account",
+    "hasAccount": "Already have an account?",
+    "loginLink": "Sign in",
+    "error": {
+      "emptyFields": "Please fill in all fields",
+      "passwordLength": "Password must be at least 8 characters long",
+      "failed": "Signup failed. Please try again."
+    }
+  },
+  "language": {
+    "switch": "Switch to Arabic",
+    "current": "English"
+  }
+}
