@@ -73,44 +73,96 @@ A fully accessible, internationalized authentication application built with Reac
 - Compatible with assistive technologies
 - Valid HTML and ARIA usage
 
-## 🚀 Getting Started
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm (v9 or higher)
+
+### Installation
 
 1. Clone the repository
-   \`\`\`bash
-   git clone [repository-url]
-   \`\`\`
+
+```bash
+git clone https://github.com/YOUR_USERNAME/accessible-react-app.git
+cd accessible-react-app
+```
 
 2. Install dependencies
-   \`\`\`bash
-   npm install
-   \`\`\`
+
+```bash
+npm install
+```
 
 3. Start the development server
-   \`\`\`bash
-   npm run dev
-   \`\`\`
+
+```bash
+npm run dev
+```
+
+4. Build for production
+
+```bash
+npm run build
+```
+
+5. Preview production build
+
+```bash
+npm run preview
+```
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run type-check` - Run TypeScript type checking
+
+### Environment Setup
+
+The app will run on `http://localhost:5173` by default. You can configure the port by setting the `PORT` environment variable.
+
+### Development Mode Features
+
+- 🔥 Hot Module Replacement (HMR)
+- 🎯 Instant feedback
+- 🐛 Detailed error reporting
+- 📱 Responsive design testing
+- 🌐 Language switching testing
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 src/
-├── components/ # Reusable components
-│ ├── FormInput # Accessible form input
-│ └── LanguageSwitcher# Language toggle
-├── contexts/ # React contexts
-│ ├── types.ts # Context types
-│ ├── LanguageContext# Language context
-│ └── LanguageProvider# Language provider
-├── hooks/ # Custom hooks
-│ ├── useLang # Language utilities
-│ └── useLanguageContext# Context hook
-├── locales/ # Translation files
-│ ├── en.json # English translations
-│ └── ar.json # Arabic translations
-└── pages/ # Page components
-├── Login # Login page
-└── Signup # Signup page
-\`\`\`
+├── components/                  # Reusable components
+│   ├── FormInput/              # Accessible form input component
+│   │   └── index.tsx
+│   └── LanguageSwitcher/       # Language toggle component
+│       └── index.tsx
+│
+├── contexts/                   # React contexts
+│   ├── types.ts               # Context type definitions
+│   ├── LanguageContext.tsx    # Language context definition
+│   └── LanguageProvider.tsx   # Language provider component
+│
+├── hooks/                     # Custom hooks
+│   ├── useLang.ts            # Language and RTL utilities
+│   └── useLanguageContext.ts # Language context hook
+│
+├── locales/                   # Translation files
+│   ├── en.json               # English translations
+│   └── ar.json               # Arabic translations
+│
+├── pages/                     # Page components
+│   ├── Login.tsx             # Login page
+│   └── Signup.tsx            # Signup page
+│
+├── App.tsx                    # Root component
+└── main.tsx                  # Entry point
+```
 
 ## 🌐 Internationalization
 
