@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/forminput.tsx","./src/components/languageswitcher.tsx","./src/contexts/languagecontext.tsx","./src/contexts/languageprovider.tsx","./src/contexts/types.ts","./src/hooks/uselang.ts","./src/hooks/uselanguagecontext.ts","./src/pages/login.tsx","./src/pages/signup.tsx"],"version":"5.8.3"}
