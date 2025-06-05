@@ -4,7 +4,7 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react()],
-    base: "/accessible-react-app/",
+    base: "/Accessible-React-Authentication-App/",
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "./src"),
