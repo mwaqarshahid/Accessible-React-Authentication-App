@@ -56,20 +56,20 @@ export default function Signup() {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center px-4 py-12 sm:px-6 lg:px-8"
+      className="min-h-screen w-full flex items-center justify-center px-4 py-12 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900"
       role="main"
       dir={dir}
     >
       <div
-        className={`w-full max-w-md space-y-8 bg-white p-8 rounded-xl shadow-lg ${textAlignClass}`}
+        className={`w-full max-w-md space-y-8 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg ${textAlignClass}`}
       >
         <div>
           <img
             className="mx-auto h-12 w-auto"
-            src="/logo.svg"
+            src={`${import.meta.env.BASE_URL}logo.svg`}
             alt={t.signup.title}
           />
-          <h1 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
+          <h1 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
             {t.signup.title}
           </h1>
         </div>
@@ -80,7 +80,7 @@ export default function Signup() {
         >
           {error && (
             <div
-              className="bg-red-50 border border-red-400 text-red-700 px-4 py-3 rounded w-full"
+              className="bg-red-50 dark:bg-red-900/50 border border-red-400 text-red-700 dark:text-red-200 px-4 py-3 rounded w-full"
               role="alert"
               aria-live="polite"
             >
@@ -134,7 +134,7 @@ export default function Signup() {
           <div className="w-full">
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-800"
               aria-label={t.signup.submitButton}
             >
               {t.signup.submitButton}
@@ -142,12 +142,12 @@ export default function Signup() {
           </div>
 
           <div className={`w-full text-center ${flexDirectionClass}`}>
-            <span className="text-sm text-gray-600">
+            <span className="text-sm text-gray-600 dark:text-gray-400">
               {t.signup.hasAccount}{" "}
             </span>
             <Link
               to="/login"
-              className="text-sm font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
             >
               {t.signup.loginLink}
             </Link>
